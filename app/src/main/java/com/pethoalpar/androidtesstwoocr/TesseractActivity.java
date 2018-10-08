@@ -15,7 +15,6 @@ import com.googlecode.tesseract.android.TessBaseAPI;
 import com.scanlibrary.ScanActivity;
 import com.scanlibrary.ScanConstants;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -75,6 +74,9 @@ public class TesseractActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        } else {
+            finish();
+
         }
     }
 

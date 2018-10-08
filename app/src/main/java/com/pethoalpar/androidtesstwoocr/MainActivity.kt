@@ -56,8 +56,10 @@ open class MainActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             val result = data!!.getStringExtra("result")
             tv_result.text = result
-            loadingDialog.dismiss()
         }
+
+        loadingDialog.dismiss()
+
     }
 
 }
